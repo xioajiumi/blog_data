@@ -1,0 +1,11 @@
+1.当前目录文件夹所包括了  https://fish-galaxy.blogspot.com/2022/01/582.html  这篇博文分析所用到的绝大多数数据。以下对每个文件进行说明。
+
+2.Chinese_Universities.pkl。该文件为封装了一个列表，里面的实例是中国582所高校的基本信息，如其官网链接、软科分数、名字、所在地等。
+
+3.university_webpage.pkl。基于Chinese_Universities.pkl，该文件为封装了一个列表，里面是对官网链接进行request.get后的返回值。如果程序没有出错且返回值为200，则对应的对象为进行request.get后的返回值。否则则为None。
+
+4.page_contents.pkl。基于university_webpage.pkl，该文件为封装了一个列表，里面是对爬虫返回信息的解码后剔除字符的unicode值小于2000后的长字符串。
+
+5.clean_page.pkl。基于page_contents.pkl，该文件为封装了一个列表，里面的字符串长度位于500~12000，是我们最终分析要用的。
+
+6.大学数据比例与绝对值.sav。该文件为SPSS的数据文件，里面包含了分析中所需的各种数据。需要注意的是，使用之前记得进行“选择个案”，只把“排除”=0的个案纳入分析范围。
