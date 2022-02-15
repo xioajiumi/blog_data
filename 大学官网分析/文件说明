@@ -2,7 +2,7 @@
 
 2.Chinese_Universities.pkl。该文件为封装了一个列表，里面的实例是中国582所高校的基本信息，如其官网链接、软科分数、名字、所在地等。
 
-3.university_webpage.pkl。基于Chinese_Universities.pkl，该文件为封装了一个列表，里面是对官网链接进行request.get后的返回值。如果程序没有出错且返回值为200，则对应的对象为进行request.get后的返回值。否则则为None。
+3.university_webpage.7z，解压后格式为pkl。基于Chinese_Universities.pkl，该文件为封装了一个列表，里面是对官网链接进行request.get后的返回值。如果程序没有出错且返回值为200，则对应的对象为进行request.get后的返回值。否则则为None。
 
 4.page_contents.pkl。基于university_webpage.pkl，该文件为封装了一个列表，里面是对爬虫返回信息的解码后剔除字符的unicode值小于2000后的长字符串。
 
